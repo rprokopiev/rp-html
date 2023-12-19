@@ -222,11 +222,14 @@ a {
 }
 
 .item-picture {
-    padding-top: 10px;
-    padding-bottom: 10px;
     display: flex;
     justify-content: center;
-    background-color: #F7E4E2;
+    background-color: #F3EDED;
+}
+
+.second {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .button {
@@ -320,5 +323,100 @@ a {
         grid-template-rows: 1fr 1fr 1fr;
         gap: 16px;
     }
+}
 
+@media screen and (max-width: 767px) {
+        .intro-header {}
+        
+        .center {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    
+        .ih-left {
+            margin-left: 16px;
+        }
+    
+        .ih-right {
+            margin-right: 16px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    
+        .intro-main {
+            padding-left: 56px;
+            padding-right: 56px;
+            margin-bottom: 0;
+            justify-content: center;
+        }
+    
+        .im-left {
+            display: none;
+        }
+    
+        .im-rigth {
+            align-content: center;
+            margin-top: 138px;
+            margin-bottom: 138px;
+            font-size: 38px;
+        }
+    
+        .im-text-2nd {
+            font-size: 20px;
+        }
+    
+        .breakdown {
+            padding-top: 64px;
+            padding-left: 16px;
+            padding-right: 16px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 248px 248px 248px 111px;
+            gap: 32px;
+        }
+    
+        .section {
+            padding: 98px 95px;
+            overflow: hidden;
+        }
+    
+        .section-pict {
+            max-width: 735px;
+        }
+    
+        .lux {
+            padding: 0;
+            grid-column: 1;
+        }
+    
+        .wide {
+            max-width: 735px;
+        }
+    
+        .items {
+            padding-top: 64px;
+            padding-bottom: 85px;
+        }
+    
+        .items-grid {
+            padding-top: 64px;
+            padding-left: 8px;
+            padding-right: 8px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 16px;
+        }
+
+        .item-picture {
+            padding-top: 0;
+            padding-bottom: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #F3EDED;
+        }
+       
+        .button {
+            padding-top: 40px;
+        }
 }
